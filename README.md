@@ -245,4 +245,5 @@ Signal to / Text:  Send message 3 (class: 4)
 Signal from /object_s1
 ```
 ---
-### Автор - https://vk.com/aptekkkar (as vk ID: https://vk.com/id169607065)
+### Автор - https://vk.com/aptekkkar 
+   + Прямой путь по ID: https://vk.com/id169607065

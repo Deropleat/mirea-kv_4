@@ -96,7 +96,7 @@ std::string cl_base::get_absolute_coordinate()
 
 	while (current->get_head_object())
 	{
-		absolute += "/" + current->get_object_name();
+		absolute = "/" + current->get_object_name() + absolute;
 		current = current->get_head_object();
 	}
 

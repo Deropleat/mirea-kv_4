@@ -118,7 +118,14 @@ int cl_application::exec_app()
 		}
 		if (from->i_object_class < 2) continue;
 		
-		if (args.at(0) == "EMIT") from->send_object_signal(signals.at(from->i_object_class - 2), args.at(4));
+		if (args.at(0) == "EMIT")
+		{
+			use = "";
+			for (size_t i = 2; i < args.size(); i++) if (i != args.size() - 1) use += args.at(i) + " ";
+			else use += args.at(i);
+
+			from->send_object_signal(signals.at(from->i_object_class - 2), use);
+		}
 		else
 		{
 			if (to)
